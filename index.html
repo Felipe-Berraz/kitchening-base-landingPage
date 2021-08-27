@@ -15,15 +15,16 @@
 </head>
 <body>
     <div id="main_container">
-        <header class="header-index">
+        <header class="header-index">     
             <ul class="link-to-forms">
+                <li class="list-item-btn"><button id="btn_burger_menu"><div class="bodymovinanim"></div></button></li>
                 <li class="list-items"><a class="links link-login link-form link-border" href="#">Login</a></li>
                 <li class="list-items" id="list_item_register"><a class="links link-register link-form link-border" href="#">Register</a></li>
             </ul>
             <section class="logo-container">
                 <img class="logo" src="images/logo.jpg" alt="logo">
             </section>
-            <nav id="main_nav_bar">
+            <nav id="main_nav_bar" class="close">
                 <ul class="nav-list">
                     <li class="list-items-nav list-items"><a class="nav-link links" href="#">HOME</a></li>
                     <li class="list-items-nav list-items"><a class="nav-link links" href="#">QUIENES</a></li>
@@ -44,21 +45,21 @@
                 <article class="products">
                     <div class="img-product img-1";></div>
                     <h2 class="title-product">Lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ut tempore eum sed nisi laboriosam impedit quo non, quam, est repellat dolor fuga? Fugiat adipisci quam consectetur? Iure, amet voluptas?</p>
+                    <p class="info-product">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ut tempore eum sed nisi laboriosam impedit quo non, quam, est repellat dolor fuga? Fugiat adipisci quam consectetur? Iure, amet voluptas?</p>
                     <button class="btn-see-more"><a class="links link-see-more" href="#">Ver Más</a></button>
                 </article>
     
                 <article class="products">
                     <div class="img-product img-2"></div>
                     <h2 class="title-product">Lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ut tempore eum sed nisi laboriosam impedit quo non, quam, est repellat dolor fuga? Fugiat adipisci quam consectetur? Iure, amet voluptas?</p>
+                    <p class="info-product">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ut tempore eum sed nisi laboriosam impedit quo non, quam, est repellat dolor fuga? Fugiat adipisci quam consectetur? Iure, amet voluptas?</p>
                     <button class="btn-see-more"><a class="links link-see-more" href="#">Ver Más</a></button>
                 </article>
     
                 <article class="products">
                     <div class="img-product img-3"></div>
                     <h2 class="title-product">Lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ut tempore eum sed nisi laboriosam impedit quo non, quam, est repellat dolor fuga? Fugiat adipisci quam consectetur? Iure, amet voluptas?</p>
+                    <p class="info-product">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ut tempore eum sed nisi laboriosam impedit quo non, quam, est repellat dolor fuga? Fugiat adipisci quam consectetur? Iure, amet voluptas?</p>
                     <button class="btn-see-more"><a class="links link-see-more" href="#">Ver Más</a></button>
                 </article>
             </section>
@@ -67,21 +68,21 @@
                 <article class="products">
                     <div class="img-product img-1"></div>
                     <h2 class="title-product">Lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ut tempore eum sed nisi laboriosam impedit quo non, quam, est repellat dolor fuga? Fugiat adipisci quam consectetur? Iure, amet voluptas?</p>
+                    <p class="info-product">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ut tempore eum sed nisi laboriosam impedit quo non, quam, est repellat dolor fuga? Fugiat adipisci quam consectetur? Iure, amet voluptas?</p>
                     <button class="btn-see-more"><a class="links link-see-more" href="#">Ver Más</a></button>
                 </article>
     
                 <article class="products">
                     <div class="img-product img-2"></div>
                     <h2 class="title-product">Lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ut tempore eum sed nisi laboriosam impedit quo non, quam, est repellat dolor fuga? Fugiat adipisci quam consectetur? Iure, amet voluptas?</p>
+                    <p class="info-product">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ut tempore eum sed nisi laboriosam impedit quo non, quam, est repellat dolor fuga? Fugiat adipisci quam consectetur? Iure, amet voluptas?</p>
                     <button class="btn-see-more"><a class="links link-see-more" href="#">Ver Más</a></button>
                 </article>
     
                 <article class="products">
                     <div class="img-product img-3"></div>
                     <h2 class="title-product">Lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ut tempore eum sed nisi laboriosam impedit quo non, quam, est repellat dolor fuga? Fugiat adipisci quam consectetur? Iure, amet voluptas?</p>
+                    <p class="info-product">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ut tempore eum sed nisi laboriosam impedit quo non, quam, est repellat dolor fuga? Fugiat adipisci quam consectetur? Iure, amet voluptas?</p>
                     <button class="btn-see-more"><a class="links link-see-more" href="#">Ver Más</a></button>
                 </article>
             </section>
@@ -89,14 +90,17 @@
     
         <footer class="footer-index">
             <ul class="list-nav-footer">
-                <li class="list-items"><a class="links link-footer link-border" href="#">Home |</a></li>
-                <li class="list-items"><a class="links link-footer link-border" href="#">Quienes |</a></li>
-                <li class="list-items"><a class="links link-footer link-border" href="#">Servicios |</a></li>
-                <li class="list-items"><a class="links link-footer link-border" href="#">Portfolio |</a></li>
-                <li class="list-items"><a class="links link-footer link-border" href="#">Sucursales |</a></li>
-                <li class="list-items"><a class="links link-footer link-border" href="#">Contacto |</a></li>
+                <li class="list-items list-item-footer"><a class="links link-footer link-border" href="#">Home |</a></li>
+                <li class="list-items list-item-footer"><a class="links link-footer link-border" href="#">Quienes |</a></li>
+                <li class="list-items list-item-footer"><a class="links link-footer link-border" href="#">Servicios |</a></li>
+                <li class="list-items list-item-footer"><a class="links link-footer link-border" href="#">Portfolio |</a></li>
+                <li class="list-items list-item-footer"><a class="links link-footer link-border" href="#">Sucursales |</a></li>
+                <li class="list-items list-item-footer"><a class="links link-footer link-border" href="#">Contacto |</a></li>
             </ul>
         </footer>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+<script src="js/lottie.js"></script>
+<script src="js/burger.js"></script>
 </html>

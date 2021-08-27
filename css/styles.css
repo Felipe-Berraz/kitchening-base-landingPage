@@ -101,64 +101,6 @@ body{
     border-radius: 5px;
 }
 
-.img-1:hover{
-    animation: anim-img 0.3s;
-    background: url('../images/img-pdto-1.jpg') no-repeat;
-    background-size: 120%;
-    cursor: pointer;
-}
-
-.img-2:hover{
-    animation: anim-img 0.3s;
-    background: url('../images/img-pdto-2.jpg') no-repeat;
-    background-size: 120%;
-    cursor: pointer;
-}
-
-.img-3:hover{
-    background: url('../images/img-pdto-3.jpg') no-repeat;
-    animation: anim-img 0.3s;
-    background-size: 120%;
-    cursor: pointer;
-}
-
-
-@keyframes anim-img{
-    0%{
-        background-size: 100%;
-    }
-    100%{
-        background-size: 120%;
-    }
-}
-
-@keyframes anim-img-out{
-    0%{
-        background-size: 120%;
-    }
-    100%{
-        background-size: 100%;
-    }
-}
-
-.img-1{
-    background: url('../images/img-pdto-1.jpg') no-repeat;
-    background-size: cover;
-    animation: anim-img-out 0.3s ease-out;
-}
-
-.img-2{
-    background: url('../images/img-pdto-2.jpg') no-repeat;
-    background-size: cover;
-    animation: anim-img-out 0.3s ease-out;
-}
-
-.img-3{
-    background: url('../images/img-pdto-3.jpg') no-repeat;
-    background-size: cover;
-    animation: anim-img-out 0.3s ease-out;
-}
-
 .title-product{
     margin-bottom: 15px;
     margin-top: 10px;
@@ -224,4 +166,189 @@ body{
 /*change scale to have a customize underline*/
 .link-border:hover::before{
   transform: scaleX(1);
+}
+
+#btn_burger_menu{
+    display: none;
+}
+
+.img-1{
+    background: url('../images/img-pdto-1.jpg') no-repeat;
+    background-size: cover;
+}
+
+.img-2{
+    background: url('../images/img-pdto-2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.img-3{
+    background: url('../images/img-pdto-3.jpg') no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1200px){
+    .section-products {
+        margin-bottom: 0;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+    }
+    .list-items-nav{
+        margin-bottom: 15px;
+        background: transparent;
+    }
+    #main_nav_bar{
+        background: #666;
+        height: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 100px;
+        margin: auto;
+    }
+    .close{
+        animation: close-nav 0.5s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .open{
+        animation: open-nav 0.5s;
+        visibility: visible;
+        opacity: 1;
+    }
+    @keyframes open-nav {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes close-nav {
+        0%{
+            opacity: 1;
+            visibility: visible;
+        }
+        80%{
+            opacity: 0;
+        }
+        100%{
+            visibility: hidden;
+        }
+    }
+
+    .logo-container{
+        margin-top: 15px;
+    }
+    .list-item-btn{
+        list-style: none;
+        width: 100%;
+    }
+    #btn_burger_menu {
+        display: block;
+        background: transparent;
+        border: none;
+        width: 20%;
+    }
+    .link-to-forms {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .section-products{
+        flex-direction: column;
+    }
+    .list-nav-footer{
+        width: fit-content;
+        align-items: center;
+        flex-direction: column;
+    }
+    .list-item-footer{
+        margin-bottom: 10px;
+    }
+    .products{
+        width: 80%;
+        margin: auto;
+    }
+    .info-product{
+        opacity: 0;
+        height: 0;
+    }
+    .btn-see-more{
+        margin-top: 0;
+        margin-bottom: 35px;
+    }
+    .title-product{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+.img-1:hover{
+    animation: anim-img 0.3s;
+    background: url('../images/img-pdto-1.jpg') no-repeat;
+    background-size: 120%;
+    cursor: pointer;
+}
+
+.img-2:hover{
+    animation: anim-img 0.3s;
+    background: url('../images/img-pdto-2.jpg') no-repeat;
+    background-size: 120%;
+    cursor: pointer;
+}
+
+.img-3:hover{
+    background: url('../images/img-pdto-3.jpg') no-repeat;
+    animation: anim-img 0.3s;
+    background-size: 120%;
+    cursor: pointer;
+}
+
+
+@keyframes anim-img{
+    0%{
+        background-size: 100%;
+    }
+    100%{
+        background-size: 120%;
+    }
+}
+
+@keyframes anim-img-out{
+    0%{
+        background-size: 120%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+
+.img-1{
+    background: url('../images/img-pdto-1.jpg') no-repeat;
+    background-size: cover;
+    animation: anim-img-out 0.3s ease-out;
+}
+
+.img-2{
+    background: url('../images/img-pdto-2.jpg') no-repeat;
+    background-size: cover;
+    animation: anim-img-out 0.3s ease-out;
+}
+
+.img-3{
+    background: url('../images/img-pdto-3.jpg') no-repeat;
+    background-size: cover;
+    animation: anim-img-out 0.3s ease-out;
+}
 }
