@@ -35,10 +35,12 @@ body{
 .link-to-forms{
     display: flex;
     justify-content: flex-end;
+    list-style: none;
 }
 
 #list_item_register{
     margin-left: 20px;
+    margin-right: 5px;
 }
 
 .logo{
